@@ -7,7 +7,9 @@
   "dependencies": {
     "express": "^4.17.1",
     "mongoose": "^6.0.12",
+    "reflect-metadata": "^0.1.13",
     "socket.io": "^4.3.2",
+    "tsyringe": "^4.6.0",
     "uuid": "^8.3.2"
   },
   "devDependencies": {
