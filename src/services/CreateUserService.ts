@@ -22,6 +22,9 @@ class CreateUserService {
         },
         {
           $set: { socket_id, avatar, name },
+        },
+        {
+          new: true,
         }
       );
 
@@ -39,4 +42,4 @@ class CreateUserService {
   }
 }
 
-export {CreateUserService}
+export { CreateUserService };
