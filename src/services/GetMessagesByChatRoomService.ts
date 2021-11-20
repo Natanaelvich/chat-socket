@@ -8,7 +8,7 @@ class GetMessagesByChatRoomService {
       idUsers: {
         roomId,
       },
-    }).populate("to");
+    }).populate("to").exec();
 
     return messages;
   }
