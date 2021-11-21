@@ -10,7 +10,7 @@ const ChatRoomSchema = new Schema({
   ],
   idChatRoom: {
     type: String,
-    default: v4(),
+    default: v4,
   },
 });
 
