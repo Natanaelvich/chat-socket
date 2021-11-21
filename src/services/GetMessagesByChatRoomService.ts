@@ -5,10 +5,10 @@ import { Message } from "../schemas/Message";
 class GetMessagesByChatRoomService {
   async execute(roomId: string) {
     const messages = await Message.find({
-      idUsers: {
-        roomId,
-      },
-    }).populate("to").exec();
+      roomId,
+    })
+      .populate("to")
+      .exec();
 
     return messages;
   }
