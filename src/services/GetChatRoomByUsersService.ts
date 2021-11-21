@@ -3,7 +3,7 @@ import { injectable } from "tsyringe";
 import { ChatRoom } from "../schemas/ChatRoom";
 
 @injectable()
-class GetChatRoomBUsersService {
+class GetChatRoomByUsersService {
   async execute(idUsers: ObjectId[]) {
     const room = await ChatRoom.findOne({
       idUsers : {
@@ -15,4 +15,4 @@ class GetChatRoomBUsersService {
   }
 }
 
-export { GetChatRoomBUsersService };
+export { GetChatRoomByUsersService };
